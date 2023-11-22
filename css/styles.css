@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* #region The headers */
+
+header {
+  background-color: black;
+}
+
+header h1 {
+  width: 440px;
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: yellow;
+  padding: 70px 0px 85px 30px;
+  letter-spacing: 5px;
+}
+
+/* #endregion */
+
+main {
+  background-color: rgba(52, 52, 52, 0.916);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .container {
+  height: 700px;
+  width: 400px;
+  margin: 2.5rem;
+  margin-top: -30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgba(204, 204, 204, 0.881);
+  border-radius: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .container h2 {
+  width: 100%;
+  color: yellow;
+  font-family: "sans-serif";
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  padding: 5px;
+  background-color: #535556;
+  border-radius: 10px 10px 0px 0px;
+}
+main .container ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+main .container ul li {
+  color: #ffffff;
+  font-family: "Sans-serif";
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 5px;
+  background-color: #8e8e8e;
+  width: 100%;
+  padding: 17px 20px;
+}
+
+/* #region The list for characters */
+
+.ul-of-characters {
+  margin-top: -238px;
+}
+
+.ul-of-characters li:nth-child(1) {
+  background-color: rgb(138, 138, 138);
+}
+
+.ul-of-characters li:nth-child(2) {
+  background-color: rgb(204, 204, 204);
+}
+
+.ul-of-characters li:nth-child(3) {
+  background-color: rgb(138, 138, 138);
+}
+
+.ul-of-characters li:nth-child(4) {
+  background-color: rgb(204, 204, 204);
+}
+
+.ul-of-characters li:nth-child(5) {
+  background-color: rgb(138, 138, 138);
+}
+
+.ul-of-characters li:nth-child(6) {
+  background-color: rgb(204, 204, 204);
+}
+
+/* #endregion */
+
+/* #region List hoover and select */
+main .info-container #home-info li {
+  color: #ffffff;
+}
+
+main .container li:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.ul-of-characters li.active {
+  background-color: black;
+  color: white;
+}
+/* #endregion */
+
+main .container p {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #000000;
+  padding: 0.5rem;
+}
+
+main .info-container h2 {
+  background-color: #749799;
+}
+
+main .info-container div {
+  width: 100%;
+  padding: 10px 25px;
+  height: 315px;
+  color: #000000;
+}
+
+main .info-container div:nth-child(3) {
+  background-color: #8e8e8e;
+  color: #ffffff;
+}
+
+main .info-container div h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.2em;
+  padding-bottom: 5px;
+}
+
+main .info-container ul li {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  background-color: unset;
+  border: none;
+  color: #000000;
+  padding: 2.5px 0;
+}
+
+p {
+  margin-top: -5px;
+}
+
+/*#region loading spinners*/
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid rgba(0, 0, 0, 0.301);
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 75%;
+}
+
+.spinner2 {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid rgba(0, 0, 0, 0.301);
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 75%;
+  right: 25%;
+}
+
+.spinner3 {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid rgba(0, 0, 0, 0.301);
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 126%;
+  right: 25%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* #endregion */
